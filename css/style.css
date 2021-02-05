@@ -785,4 +785,7 @@ strong{
         display: flex;
         justify-content: flex-start !important;
     }
+    .display{
+        flex-direction: column;
+    }
 }
