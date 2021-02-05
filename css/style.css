@@ -704,6 +704,34 @@ strong{
     font-size: 15px;
     color: #FFF;
 }
+.site-social .display{
+    display: flex;
+    justify-content: space-between;
+}
+.site-social .menu-social ul{
+    display: inline-flex;
+}
+.site-social .menu-social ul li{
+    margin-right: 30px;
+}
+.site-social .menu-social ul li a{
+    color: #FFF;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-twitter:hover{
+    color: #33ccff;
+}
+.fa-dribbble:hover{
+    color: #ea4c89;
+}
+.fa-vimeo:hover{
+    color: #1AB7EA;
+}
+.fa-youtube:hover{
+    color: #c4302b;
+}
 @media only screen and (max-width: 767px){
     .top-header-bar{
         flex-direction: column;
