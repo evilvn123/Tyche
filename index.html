@@ -80,11 +80,19 @@
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
+                        <button class="button-menu-res" onclick="showMenu()">
+                            <i class="fa fa-bars"></i>
+                        </button>                      
                     </div>
                 </div>
             </div>
-
         </nav>
+        <ul id="menu-res" class="menu-res">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </header>
     <section class="main-slider">
         <div class="owl-carousel owl-theme owl-loaded owl-drag">
@@ -933,6 +941,10 @@
     </script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
+        function showMenu(){
+            let menu = document.getElementById("menu-res");
+            menu.classList.toggle('display-block');
+        }
         $('.main-slider .owl-carousel').owlCarousel({
             items: 1,
             lazyLoad: true,

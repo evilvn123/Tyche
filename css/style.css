@@ -158,26 +158,56 @@ h3{
     width: 165px;
     height: 70px;
 }
-.site-header .menu ul{
+.site-header .menu{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.site-header .menu .menu-list{
     width: 100%;
     margin-top: 15px;
     border-top: 1px solid #353940;
     display: inline-flex;
 }
-.site-header .menu ul li{
+.site-header .menu .menu-list li{
     padding:15px 30px 15px 0px;
 }
-.site-header .menu ul li a{
+.site-header .menu .menu-list li a{
     font-family: karla,sans-serif;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
 }
-.site-header .menu ul li a:hover{
+.site-header .menu .menu-list li a:hover{
     color: #f66249;
 }
-.site-header .menu ul .active a{
+.site-header .menu .menu-list .active a{
     color: #f66249;
+}
+.site-header .button-menu-res{
+    display: none;
+    padding: 0;
+    background: transparent;
+    border: transparent;
+}
+.site-header .button-menu-res i{
+    color: #F66249;
+    font-size: 17px;
+}
+.site-header .menu-res{
+    display: none;
+    margin-top: 30px;
+    background-color: #25262b;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 0;
+}
+.site-header .menu-res li{
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 10px 20px;
+}
+.site-header .menu-res li a{
+    color: #FFF; 
 }
 .main-slider .main-slider-bar{
     background: #f66249;
@@ -732,6 +762,14 @@ strong{
 .fa-youtube:hover{
     color: #c4302b;
 }
+.display-block{
+    display: block !important;
+}
+@media only screen and (min-width: 767px){
+    .menu-res{
+        display: none;
+    }
+}
 @media only screen and (max-width: 767px){
     .top-header-bar{
         flex-direction: column;
@@ -761,6 +799,20 @@ strong{
     .header-list-responsive ul .top-account{
         border: 0px !important;
     }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .menu-list{
+        display: none !important;
+    }
+    .button-menu-res{
+        display: block !important;
+    }
+    .menu-res{
+        /* display: block !important; */
+    }
+    
     .main-slider .item .hero-caption{
         display: none !important;
     }
