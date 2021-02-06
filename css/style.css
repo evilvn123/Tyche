@@ -765,12 +765,124 @@ strong{
 .display-block{
     display: block !important;
 }
-@media only screen and (min-width: 767px){
-    .menu-res{
-        display: none;
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .product-body .price del{
+        display: none !important;
+    }
+    .content-3 .item{
+        padding-bottom: 30px;
     }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .top-header-bar{
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 50px;
+    }
+    .main-slider-bar ul{
+        display: none !important;
+    }
+    .header-mail-responsive{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+    }
+    .header-list-responsive{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header-list-responsive ul{
+        width: 100%;
+        display: block !important;
+    }
+    .header-list-responsive ul .top-account{
+        border: 0px !important;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .pr30{
+        padding: 20;
+    }
+    .item img{
+        width: 100%;
+    }
+    .content-3 .item{
+        padding-bottom: 30px;
+    }
+    .date-image{
+        display: flex;
+        justify-content: flex-start !important;
+    }
+    .display{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .top-header-bar{
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 50px;
+    }
+    .main-slider-bar ul{
+        display: none !important;
+    }
+    .header-mail-responsive{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+    }
+    .header-list-responsive{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header-list-responsive ul{
+        width: 100%;
+        display: block !important;
+    }
+    .header-list-responsive ul .top-account{
+        border: 0px !important;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    } 
+    .menu-list{
+        display: none !important;
+    }
+    .button-menu-res{
+        display: block !important;
+    }  
+    .main-slider .item .hero-caption{
+        display: none !important;
+    }
+    .pr30{
+        padding: 20;
+    }
+    .item img{
+        width: 100%;
+    }
+    .hidden-xs{
+        display: none;
+    }
+    .date-image{
+        display: flex;
+        justify-content: flex-start !important;
+    }
+    .display{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 576px){
     .top-header-bar{
         flex-direction: column;
         justify-content: flex-start;
