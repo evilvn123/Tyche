@@ -846,7 +846,7 @@ strong{
     position: relative;
 
     overflow: hidden;
-    cursor: zoom-in;
+    cursor: auto;
 }
   
 .zoom img:hover {
