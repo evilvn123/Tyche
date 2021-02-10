@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Slide -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/tyche-product.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 top-header-bar">
+                    <div class="col-md-3 col-12 header-mail-responsive left ">
+                        <span><i class="fa fa-envelope-o"></i> flyass@gmail.com</span>
+                    </div>
+                    <div class="col-md-9 col-12 header-list-responsive right ">
+                        <ul>
+                            <li class="top-cart">
+                                <a href="https://demo.colorlib.com/tyche/cart/"><i class="fa fa-shopping-cart"></i> My
+                                    Cart - $ <span class="price">0</span> </a>
+                            </li>
+                            <li class="top-account">
+                                <a href="https://demo.colorlib.com/tyche/my-account/"><i class="fa fa-user"></i> Account
+                                </a>
+                            </li>
+                            <li class="top-search">
+                                <div class="form">
+                                    <label>
+                                        <input class="search-field-top-bar" placeholder="Search ..." value="" name="s"
+                                            type="search">
+                                    </label>
+                                    <button type="submit" class="search-top-bar-submit center">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="site-header">
+        <div class="brand container">
+            <div class="row">
+                <div class="col-sm-4 logo">
+                    <a href="https://demo.colorlib.com/tyche/" class="custom-logo-link" rel="home" aria-current="page">
+                        <img src="images/logo.webp" alt="Tyche Demo"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="menu-list">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <button class="button-menu-res" onclick="showMenu()">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <ul id="menu-res" class="menu-res">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="product-detail">
+        <div class="container">
+            <div class="link">
+                <span><a href="">Home</a></span>
+                <span>/</span>
+                <span><a href="">Tops</a></span>
+                <span>/</span>
+                <span>Black Top</span>
+            </div>
+            <div class="row">
+                <div class="product-image col-md-6 col-12">
+                    <figure class="image zoom" style="background:url(images/woman-1477091_1920.jpg)"
+                        onmousemove="zoom(event)" ontouchmove="zoom(event)">
+                        <img src="images/woman-1477091_1920-768x512.jpg" alt="">
+                        <a class="zoom-button" href="#"><i class="fa fa-search"></i></a>
+                    </figure>
+                </div>
+                <div class="product-infor col-md-6 col-12">
+                    <h3 class="product-title">Black Top</h3>
+                    <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <span class="price">
+                        <bdi>
+                            <span class="">$</span>35.00
+                        </bdi>
+                    </span>
+                    <form class="number-product" action="">
+                        <div class="input">
+                            <button class="minus">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                            <input class="number" type="text" name="" id="">
+                            <button class="plus">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <a class="button-add" href="">Add to cart</a>
+                    <div class="category">
+                        <span>Categories: </span>
+                        <ul class="category-list">
+                            <li class="category-item"><a href="">Tops</a></li>
+                            <li class="category-item"><span>, </span><a href="">Trends</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-des-review">
+        <div class="container">
+            <div class="row">
+                <div class="content col-12">
+                    <div class="header">
+                        <ul class="title-list">
+                            <li class="title-item active"><a href="">Description</a></li>
+                            <li class="title-item"><a href="">Reviews(0)</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-text">
+                        <div class="description">
+                            <h3 class="title">Description</h3>
+                            <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque
+                                blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu,
+                                id illud principes has. Nam tempor utamur gubergren no.</p>
+                            <p>Ex soleat habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo
+                                cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad.
+                                Mazim possim adipisci sea ei, omnium aeterno platonem mei no.</p>
+                            <div class="saboxplugin-wrap">
+                                <div class="saboxplugin-wrap-logo">
+                                    <img src="images/4f668af6daea3af014898a77c8929dd8.jpeg" alt="">
+                                </div>
+                                <div class="saboxplugin-wrap-content">
+                                    <a href="">raibercristian</a>
+                                    <p>Ed esmod sapien sit amet porttitor faucibus. Cras libero sapien, consequat ac sagittis non, dignissim et odio.Aenean iaculis sem eget lacus tempor, vel tristique eros congue. Mauris tempus ex ac ipsum rhoncus aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review"> 
+                            <h3 class="title">Reviews</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="related-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="widget-title"><span>Related Products</span></h3>
+                    <div class="row">
+                        <div class="item col-lg col-md-6 col-12">
+                            <div class="product-image">
+                                <a class="product-link" href="">
+                                    <img src="images/woman-1484279_1920-255x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title"><a href="#">Marina Style</a>
+                                </h3>
+                                <span class="price">
+                                    <span class="">
+                                        <bdi><span class="">$</span>35.00</bdi>
+                                    </span>
+                                </span>
+                                <a rel="nofollow" href="#" class="button add-to-cart"><span
+                                        class="fa fa-shopping-cart"></span> Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="item col-lg col-md-6 col-12">
+                            <div class="product-image">
+                                <a class="product-link" href="">
+                                    <img src="images/key-692199_1920-255x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title"><a href="#">Amari Shirt</a>
+                                </h3>
+                                <span class="price">
+                                    <del>
+                                        <span class="">
+                                            <bdi><span class="">$</span>35.00</bdi>
+                                        </span>
+                                    </del>
+                                    <ins>
+                                        <span class="">
+                                            <bdi><span class="">$</span>20.00</bdi>
+                                        </span>
+                                    </ins>
+                                </span>
+                                <a rel="nofollow" href="#" class="button add-to-cart"><span
+                                        class="fa fa-shopping-cart"></span> Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="item col-lg col-md-6 col-12">
+                            <div class="product-image">
+                                <a class="product-link" href="">
+                                    <img src="images/girl-in-white-dress-1333640_1920-255x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title"><a href="#">Marcara Sleeveless Dress</a>
+                                </h3>
+                                <span class="price">
+                                    <span class="">
+                                        <bdi><span class="">$</span>55.00</bdi>
+                                    </span>
+                                </span>
+                                <a rel="nofollow" href="#" class="button add-to-cart"><span
+                                        class="fa fa-shopping-cart"></span> Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="item col-lg col-md-6 col-12">
+                            <div class="product-image">
+                                <a class="product-link" href="">
+                                    <img src="images/woman-1477091_1920-255x320.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title"><a href="#">Black Top</a>
+                                </h3>
+                                <span class="price">
+                                    <span class="">
+                                        <bdi><span class="">$</span>35.00</bdi>
+                                    </span>
+                                </span>
+                                <a rel="nofollow" href="#" class="button add-to-cart"><span
+                                        class="fa fa-shopping-cart"></span> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="widget col-lg-3 col-md-6 col-12">
+                    <h3 class="widget-title">Meta</h3>
+                    <ul class="meta-list">
+                        <li><i class="fa fa-angle-right"></i><a href="">Log in</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="">Entries Feed</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="">Comments Feed</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="">WordPress.org</a></li>
+                    </ul>
+                </div>
+                <div class="widget col-lg-3 col-md-6 col-12">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul class="recent-list">
+                        <li>
+                            <img src="images/down-jackets-1281699_1920-65x65.jpg" alt="">
+                            <p> <a href="">Jackets For The Soul. What Color Is Yours?</a></p>
+                        </li>
+                        <li>
+                            <img src="images/vibrant-641434_1920-65x65.jpg" alt="">
+                            <p> <a href="">Best Fabrics For Your Dream Dress!</a></p>
+                        </li>
+                        <li>
+                            <img src="images/stockings-428602_1920-65x65.jpg" alt="">
+                            <p> <a href="">Long Legs? No Longer A Myth! Check it out!</a></p>
+                        </li>
+                        <li>
+                            <img src="images/clothing-964878_1920-65x65.jpg" alt="">
+                            <p> <a href="">Latest Trends For Autumn Are Here!</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget col-lg-3 col-md-6 col-12">
+                    <h3 class="widget-title">About</h3>
+                    <div class="textwidget">
+                        <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam.</p>
+                        <p>Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix
+                            eu, id illud principes has. Nam tempor utamur gubergren no.</p>
+                    </div>
+                </div>
+                <div class="widget col-lg-3 col-md-6 col-12">
+                    <h3 class="widget-title">Tags</h3>
+                    <div class="tag-widget">
+                        <a href="" class="tag">Autumn</a>
+                        <a href="" class="tag">dress</a>
+                        <a href="" class="tag">fashion</a>
+                        <a href="" class="tag">jackets</a>
+                        <a href="" class="tag">stockings</a>
+                        <a href="" class="tag">trends</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="site-social">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 display">
+                    <div class="menu-social">
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-vimeo"></i></a></li>
+                            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copy-right">
+                        Copyright © 2021 | Theme: Tyche | Powered by WordPress | Copy by Minh đẹp trai hơn Cow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        function showMenu() {
+            const menu = document.getElementById("menu-res");
+            menu.classList.toggle('display-block');
+        }
+
+        function zoom(e) {
+            var zoomer = e.currentTarget;
+            e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+            e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+            x = (offsetX / zoomer.offsetWidth) * 100
+            y = (offsetY / zoomer.offsetHeight) * 100
+            zoomer.style.backgroundPosition = x + "% " + y + "%";
+        }
+    </script>
+</body>
+
+</html>
