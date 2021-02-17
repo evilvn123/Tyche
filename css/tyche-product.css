@@ -399,15 +399,14 @@ h3{
 .product-des-review .content-text .review{
     padding: 35px;
 }
+/* Doan nay viet cho vui */
 .product-des-review .content-text .review .title+p{
     margin-bottom: 40px;
 }
 .product-des-review .content-text .review .title+p+p{
     margin-bottom: 0;
 }
-.product-des-review .content-text .review .rating{
-}
-.product-des-review .content-text .review .rating p{
+.product-des-review .review .form p{
     margin-bottom: 0;
 }
 .product-des-review .content-text .review .rating .rating-form{
@@ -444,7 +443,43 @@ h3{
 .rating-stars input:checked + label:hover{
     color: #ffab1a;
 }
+.product-des-review .review .form .review-content{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    resize: both;
+    cursor: text;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+}
 
+.product-des-review .review .form .name-email-submit input{
+    width: 100%;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+}
+.product-des-review .review .form .name-email-submit .submit{
+    display: flex;
+    align-items: flex-end;
+}
+.submit button{
+    margin-bottom: 0;
+    border: 2px solid;
+    border-color: var(--primary-color);
+    border-radius: 3px;
+    background: var(--primary-color);
+    color: #FFF;
+    font-size: 15px;
+    padding: 5px 5px;
+    font-weight: 700;
+}
 .related-products{
     padding-top: 30px;
 }

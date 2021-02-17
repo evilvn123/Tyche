@@ -111,7 +111,7 @@
                 <div class="message-button">
                     <a class="button" href=""> View cart</a>
                 </div>
-            </div>  
+            </div>
             <div class="row">
                 <div class="product-image col-md-6 col-12">
                     <figure class="image zoom" style="background:url(images/woman-1477091_1920.jpg)"
@@ -193,26 +193,45 @@
                             <p>There are no reviews yet.</p>
                             <p>Be the first to review “Black Top”</p>
                             <p>Your email address will not be published. Required fields are marked *</p>
-                            <div class="rating">
-                                <p>Your rating *</p>
-                                <div class="rating-form">
-                                    <div class="rating-stars">
-                                        <input type="radio" id="star5" name="rate" value="5" />
-                                        <label for="star5" title="text"><i class="fa fa-star"></i></label>
-                                        <input type="radio" id="star4" name="rate" value="4" />
-                                        <label for="star4" title="text"><i class="fa fa-star"></i></label>
-                                        <input type="radio" id="star3" name="rate" value="3" />
-                                        <label for="star3" title="text"><i class="fa fa-star"></i></label>
-                                        <input type="radio" id="star2" name="rate" value="2" />
-                                        <label for="star2" title="text"><i class="fa fa-star"></i></label>
-                                        <input type="radio" id="star1" name="rate" value="1" />
-                                        <label for="star1" title="text"><i class="fa fa-star"></i></label>
+
+                            <form class="form">
+                                <div class="rating">
+                                    <p>Your rating *</p>
+                                    <div class="rating-form">
+                                        <div class="rating-stars">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text"><i class="fa fa-star"></i></label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text"><i class="fa fa-star"></i></label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text"><i class="fa fa-star"></i></label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text"><i class="fa fa-star"></i></label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text"><i class="fa fa-star"></i></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form">
-
-                            </div>
+                                <div class="review-content">
+                                    <p>Your review*</p>
+                                    <textarea name="content" id="comment" cols="50" rows="3" required></textarea>
+                                </div>
+                                <div class="name-email-submit">
+                                    <div class="row">
+                                        <div class="name col-md-4 col-12">
+                                            <p>Your name*</p>
+                                            <input type="text" id="name" size="30" required>
+                                        </div>
+                                        <div class="email col-md-4 col-12">
+                                            <p>Your email*</p>
+                                            <input type="email" id="email" size="30" required>
+                                        </div>
+                                        <div class="submit col-md-4 col-12">
+                                            <button type="submit" onclick="alertFormRequired()">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -246,7 +265,7 @@
                         <div class="item col-md-3 col-sm-6 col-12">
                             <div class="product-image">
                                 <div class="sale">Sale!</div>
-                                <a class="product-link" href="">                               
+                                <a class="product-link" href="">
                                     <img src="images/key-692199_1920-255x320.jpg" alt="">
                                 </a>
                             </div>
@@ -402,15 +421,65 @@
         }
         let numberProduct = 0;
         console.log(numberProduct);
+
         function changeNumberProduct(num) {
             numberProduct += num;
-            numberProduct = numberProduct<0? 0: numberProduct;
+            numberProduct = numberProduct < 0 ? 0 : numberProduct;
             document.getElementById("txtNumberProduct").value = numberProduct;
         }
-        function addToCart(){
+
+        function addToCart() {
             const message = Array.from(document.getElementsByClassName("message"));
             message[0].classList.add('display-flex');
-        }     
+        }
+
+        function getRatingValue() {
+            const ratingVal = document.getElementsByName("rate");
+            var rate_value;
+            for (var i = 0; i < ratingVal.length; i++) {
+                if (ratingVal[i].checked) {
+                    rate_value = ratingVal[i].value;
+                }
+            }
+            console.log(rate_value);
+            return rate_value;
+        }
+
+        function alertFormRequired() {
+            let key = 0;
+            
+            const comment = document.getElementById("comment");
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            if( getRatingValue() === undefined){
+                key =0;
+            }
+            else if(comment.value===""){
+                key=1;
+            }
+            else if(name.value===""){
+                key=2;
+            }
+            else if(value.value===""){
+                key=3;
+            }
+            switch (key) {
+                case 0:
+                    alert("You must select rating!")
+                    break;
+                case 1:
+                    alert("You must fill out the review!")
+                    break;
+                case 2:
+                    alert("You must fill out the name!")
+                    break;
+                case 3:
+                    alert("You must fill out the email!")
+                    break;           
+                default:
+                    break;
+            }
+        }
 
         function zoom(e) {
             var zoomer = e.currentTarget;
