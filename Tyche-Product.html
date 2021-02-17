@@ -138,7 +138,7 @@
                             <button class="minus" onclick="changeNumberProduct(-1)">
                                 <i class="fa fa-minus"></i>
                             </button>
-                            <input class="number" type="text" id="txtNumberProduct" value="0" readonly>
+                            <input class="number" type="text" id="txtNumberProduct" value="1" readonly>
                             <button class="plus" onclick="changeNumberProduct(1)">
                                 <i class="fa fa-plus"></i>
                             </button>
@@ -419,12 +419,12 @@
             const menu = document.getElementById("menu-res");
             menu.classList.toggle('display-block');
         }
-        let numberProduct = 0;
+        let numberProduct = 1;
         console.log(numberProduct);
 
         function changeNumberProduct(num) {
             numberProduct += num;
-            numberProduct = numberProduct < 0 ? 0 : numberProduct;
+            numberProduct = numberProduct < 1 ? 1 : numberProduct;
             document.getElementById("txtNumberProduct").value = numberProduct;
         }
 
