@@ -103,6 +103,15 @@
                 <span>/</span>
                 <span>Black Top</span>
             </div>
+            <div class="message">
+                <div class="message-text">
+                    <i class="fa fa-check-circle"></i>
+                    <p> “Black Top” has been added to your cart.</p>
+                </div>
+                <div class="message-button">
+                    <a class="button" href=""> View cart</a>
+                </div>
+            </div>  
             <div class="row">
                 <div class="product-image col-md-6 col-12">
                     <figure class="image zoom" style="background:url(images/woman-1477091_1920.jpg)"
@@ -124,18 +133,18 @@
                             <span class="">$</span>35.00
                         </bdi>
                     </span>
-                    <form class="number-product" action="">
+                    <div class="number-product">
                         <div class="input">
-                            <button class="minus">
+                            <button class="minus" onclick="changeNumberProduct(-1)">
                                 <i class="fa fa-minus"></i>
                             </button>
-                            <input class="number" type="text" name="" id="">
-                            <button class="plus">
+                            <input class="number" type="text" id="txtNumberProduct" value="0" readonly>
+                            <button class="plus" onclick="changeNumberProduct(1)">
                                 <i class="fa fa-plus"></i>
                             </button>
                         </div>
-                    </form>
-                    <a class="button-add" href="">Add to cart</a>
+                    </div>
+                    <a class="button-add" href="#" onclick="addToCart()">Add to cart</a>
                     <div class="category">
                         <span>Categories: </span>
                         <ul class="category-list">
@@ -153,12 +162,13 @@
                 <div class="content col-12">
                     <div class="header">
                         <ul class="title-list">
-                            <li class="title-item active"><a href="">Description</a></li>
-                            <li class="title-item"><a href="">Reviews(0)</a></li>
+                            <li class="title-item active" onclick="showContentText()"><a>Description</a></li>
+                            <li class="title-item" onclick="showContentText()"><a>Reviews(0)</a></li>
                         </ul>
+                        <div class="border-bottom-div"></div>
                     </div>
                     <div class="content-text">
-                        <div class="description">
+                        <div class="description" id="description">
                             <h3 class="title">Description</h3>
                             <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque
                                 blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu,
@@ -172,12 +182,37 @@
                                 </div>
                                 <div class="saboxplugin-wrap-content">
                                     <a href="">raibercristian</a>
-                                    <p>Ed esmod sapien sit amet porttitor faucibus. Cras libero sapien, consequat ac sagittis non, dignissim et odio.Aenean iaculis sem eget lacus tempor, vel tristique eros congue. Mauris tempus ex ac ipsum rhoncus aliquet.</p>
+                                    <p>Ed esmod sapien sit amet porttitor faucibus. Cras libero sapien, consequat ac
+                                        sagittis non, dignissim et odio.Aenean iaculis sem eget lacus tempor, vel
+                                        tristique eros congue. Mauris tempus ex ac ipsum rhoncus aliquet.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review"> 
+                        <div class="review non-active" id="review">
                             <h3 class="title">Reviews</h3>
+                            <p>There are no reviews yet.</p>
+                            <p>Be the first to review “Black Top”</p>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <div class="rating">
+                                <p>Your rating *</p>
+                                <div class="rating-form">
+                                    <div class="rating-stars">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text"><i class="fa fa-star"></i></label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text"><i class="fa fa-star"></i></label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text"><i class="fa fa-star"></i></label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text"><i class="fa fa-star"></i></label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text"><i class="fa fa-star"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form">
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +225,7 @@
                 <div class="col-12">
                     <h3 class="widget-title"><span>Related Products</span></h3>
                     <div class="row">
-                        <div class="item col-lg col-md-6 col-12">
+                        <div class="item col-md-3 col-sm-6 col-12">
                             <div class="product-image">
                                 <a class="product-link" href="">
                                     <img src="images/woman-1484279_1920-255x320.jpg" alt="">
@@ -208,9 +243,10 @@
                                         class="fa fa-shopping-cart"></span> Add to cart</a>
                             </div>
                         </div>
-                        <div class="item col-lg col-md-6 col-12">
+                        <div class="item col-md-3 col-sm-6 col-12">
                             <div class="product-image">
-                                <a class="product-link" href="">
+                                <div class="sale">Sale!</div>
+                                <a class="product-link" href="">                               
                                     <img src="images/key-692199_1920-255x320.jpg" alt="">
                                 </a>
                             </div>
@@ -233,14 +269,14 @@
                                         class="fa fa-shopping-cart"></span> Add to cart</a>
                             </div>
                         </div>
-                        <div class="item col-lg col-md-6 col-12">
+                        <div class="item col-md-3 col-sm-6 col-12">
                             <div class="product-image">
                                 <a class="product-link" href="">
                                     <img src="images/girl-in-white-dress-1333640_1920-255x320.jpg" alt="">
                                 </a>
                             </div>
                             <div class="product-body">
-                                <h3 class="product-title"><a href="#">Marcara Sleeveless Dress</a>
+                                <h3 class="product-title"><a href="#">Sleeveless Dress</a>
                                 </h3>
                                 <span class="price">
                                     <span class="">
@@ -251,7 +287,7 @@
                                         class="fa fa-shopping-cart"></span> Add to cart</a>
                             </div>
                         </div>
-                        <div class="item col-lg col-md-6 col-12">
+                        <div class="item col-md-3 col-sm-6 col-12">
                             <div class="product-image">
                                 <a class="product-link" href="">
                                     <img src="images/woman-1477091_1920-255x320.jpg" alt="">
@@ -364,6 +400,17 @@
             const menu = document.getElementById("menu-res");
             menu.classList.toggle('display-block');
         }
+        let numberProduct = 0;
+        console.log(numberProduct);
+        function changeNumberProduct(num) {
+            numberProduct += num;
+            numberProduct = numberProduct<0? 0: numberProduct;
+            document.getElementById("txtNumberProduct").value = numberProduct;
+        }
+        function addToCart(){
+            const message = Array.from(document.getElementsByClassName("message"));
+            message[0].classList.add('display-flex');
+        }     
 
         function zoom(e) {
             var zoomer = e.currentTarget;
@@ -372,6 +419,18 @@
             x = (offsetX / zoomer.offsetWidth) * 100
             y = (offsetY / zoomer.offsetHeight) * 100
             zoomer.style.backgroundPosition = x + "% " + y + "%";
+        }
+
+        function showContentText(id) {
+            const descriptionContent = document.getElementById("description");
+            const reviewContent = document.getElementById("review");
+            const titleItems = Array.from(document.getElementsByClassName("title-item"));
+
+            titleItems.forEach(element => {
+                element.classList.toggle('active');
+            })
+            reviewContent.classList.toggle('non-active');
+            descriptionContent.classList.toggle('non-active');
         }
     </script>
 </body>
